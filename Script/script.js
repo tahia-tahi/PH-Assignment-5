@@ -8,22 +8,16 @@ document.getElementById('gradient-div')
     })
 
 
-    document.getElementById('back-btn')
-.addEventListener('click', function(){
 
-    window.location.href = './index.html';
-
-
-})
 
 // calender
 const today = new Date();
 
-const dayAll = { weekday : 'long'};
+const dayAll = { weekday: 'long' };
 const calender = { day: 'numeric', month: 'short', year: 'numeric' }
 
 const currentDay = today.toLocaleDateString('en-US', dayAll);
-const currentDate =  today.toLocaleDateString('en-US',calender);
+const currentDate = today.toLocaleDateString('en-US', calender);
 
 document.getElementById('day').innerText = currentDay;
 document.getElementById('today').innerText = currentDate;
@@ -40,7 +34,7 @@ for (let btn of button) {
 
         alert('Board updated successfully')
 
-        if( btn === button[button.length - 1] ){
+        if (btn === button[button.length - 1]) {
             alert('Congrats!!! You have completed all the current task')
         }
 
@@ -83,14 +77,14 @@ for (let btn of button) {
 
 // dynamic background
 
-const colors = ['bg-red-100', 'bg-green-100','bg-blue-100','bg-yellow-100']
+const colors = ['bg-red-100', 'bg-green-100', 'bg-blue-100', 'bg-yellow-100']
 let i = 0;
 document.getElementById('theme-btn')
     .addEventListener('click', function () {
         document.body.classList.remove(...colors);
         document.body.classList.add(colors[i]);
         i = (i + 1) % colors.length;
-     
+
 
     })
 
