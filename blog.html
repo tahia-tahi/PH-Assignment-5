@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,7 +24,7 @@
 
         <!-- button div -->
 
-        <button class="py-[10px] px-[15px] text-[14px] text-white rounded-lg bg-[#3752FD] ">Back to Desk</button>
+        <button id="back-btn" class="py-[10px] px-[15px] text-[14px] text-white rounded-lg bg-[#3752FD] ">Back to Desk</button>
 
 
 
@@ -40,7 +40,7 @@
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What are the different ways to select an element in the DOM?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p> There are different ways to select elements in DOM.These are getElementsByTagName,getElementsByClass, getElementByID,getElementByQuerySelector, QuerySelectorAll, getAttribute, setAttribute, innerText, innerHTML etc.</p>
             </div>
           </div>
 
@@ -51,7 +51,7 @@
 
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>innerHTML returns the HTML contents including the tag. innerText and textContent returns the text inside the tag, not returns the tag. They both does same  ut there is a key different between them. InnerText returns text with css styling. But textContent ignores CSS styling.</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@
 
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>Attaching a single eventListener to parent element instead of adding multiple eventListener to child elements.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-white mb-4">
@@ -71,18 +71,20 @@
 
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>Event bubbling is a concept by which user gives command to browser to get the target element. When user clicks on an element it keeps bubbling till root and get the target. </p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-white mb-4">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you create, add, and remove elements using JavaScript?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>To create element I will use CreateElements. To remove element I will use .remove after parentNode and to add I will use .add or appendChild. </p>
             </div>
           </div>
 
     </header>
+
+    <script src="Script/script.js"></script>
     
 </body>
 </html>
