@@ -57,10 +57,8 @@ for (let btn of button) {
 
         const notification = document.getElementById('history');
         const p = document.createElement('p');
-        p.classList.add('bg-[#F4F7FF]', 'p-3', 'pt-0', 'text-[#838383]', 'text-[11px]', 'mt-3', 'rounded-lg', 'text-left')
-        p.innerText = `
-        You have Complete The Task ${task} at ${currentTime}
-        `
+        p.classList.add('bg-[#F4F7FF]', 'p-3', 'pt-0', 'text-[#393333]', 'text-[11px]', 'mt-3', 'rounded-lg', 'text-left')
+        p.innerText = `You have Complete The Task ${task} at ${currentTime}`
 
         notification.appendChild(p);
         notification.style.display = 'block';
